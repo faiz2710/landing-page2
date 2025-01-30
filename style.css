@@ -1,0 +1,575 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+}
+/* navbar */
+header {
+    background: linear-gradient(rgba(121, 119, 138, 0.3),
+    rgba(201, 201, 208, 0.7));
+    padding: -10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+    transition: background-color 0.2s ease-in-out;
+}
+
+header.scrolled{
+background-color: white;
+opacity: 0.98;
+}
+
+header nav a{
+    transition: color 0.4s ease-in-out;
+}
+
+header.scrolled nav a{
+    color: black;
+}
+
+header:hover{
+    background-color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 400px;
+}
+
+nav .logo{
+    display: flex;
+}
+
+nav .logo img {
+    margin-left: 150px;
+}
+
+nav .nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    font-family: "poppins", serif;
+    font-weight: 700;
+    margin-left: 250px;
+}
+
+nav .nav-links a:hover {
+    text-decoration: none;
+    color: #fdc938;  
+}
+
+nav .nav-links li {
+    margin: 0 15px;
+}
+nav .nav-links a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 19px;
+}
+/* navbar selesai */
+
+/* hero */
+.hero {
+    background: linear-gradient(rgba(9, 5, 54, 0.3),
+    rgba(5, 4, 46, 0.7)), url(assets/pemandangan.avif) no-repeat center center/cover;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+
+.cta-btn .btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    margin-top: 50px;
+    margin-left: 400px;
+    border-radius: 50px;
+    background-color: #005cbb;
+}
+.cta-btn .btn:hover{
+    background-color: #fdc938;
+}
+.cta-btn .btn i{
+    font-size: medium;
+    padding-top: 10px;
+}
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 500px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 90px;
+}
+/* hero selesai */
+
+/* destination */
+.destination{
+    margin-top: 250px;
+    margin-left: 80px;
+}
+
+.destination{
+    padding-top: 10px;
+}
+.destination p{
+    color: gray;
+    text-align: center;
+    margin-right: 100px;
+}
+.destination h1{
+    text-align: center;
+    margin-right: 100px
+}
+.destinasion-wrap{
+    margin-top: 200px;
+    background: linear-gradient(rgba(121, 119, 140, 0.3),
+    rgba(201, 201, 208, 0.7));
+    border-radius: 30px;
+}
+/* swiper */
+swiper-container{
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    gap: 30px;
+
+}
+
+.cardcontainer{
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.231) 0px 1px 0px, rgba(17, 17, 26, 0.495) 0px 0px 4px;
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.cardfoto img{
+    border-radius: 10px;
+    width: 350px;
+    height: 200px;
+}
+
+.cardcontainer{
+    transition: transform 0.3s ease;
+}
+
+.cardcontainer:hover{
+    transform: translateY(-10px);
+}
+
+.cardcontainer h3{
+    text-align: start;
+    margin-top: 10px;
+}
+.cardcontainer p{
+    margin-top: 10px;
+}
+.tour-location{
+    color: black;
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: start;
+}
+.tour-price{
+    font-size: 18px;
+    font-weight: bold;
+    color: #002e5e;
+    margin: 5px 0;
+    text-align: start;
+}
+.cardcontainer .bintang{
+    margin-top: -10px;
+    color: #fdc938;
+    font-size: 30px;
+    text-align: start;
+}
+/* swiper selesai */
+
+/* tentang kami */
+.tentang-kami{
+    margin-top: 200px;
+    margin-left: 300px;
+    width: 70%;
+}
+.image{
+    display: flex;
+}
+.image img{
+    width: 400px;
+    height: 500px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+.image p{
+    color: gray;
+    padding-left: 20px;
+    padding-top: 100px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.tentang-kami h1{
+    margin-left: 450px;
+    font-weight: bold;
+    font-size: 100px;
+    font-size: xx-large;
+    margin-top: 170px;
+}
+
+/* testimoni */
+.testimoni-wrap{
+    margin-top: 250px;
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3),
+    rgba(5, 4, 46, 0.7)),url(assets/background.avif);
+    height: 900px;
+}
+/* swiper */
+swiper-container{
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    gap: 30px;
+
+}
+
+.swiper-wrap{
+    justify-content: center;
+    padding-top: 200px;
+}
+.containercard{
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.231) 0px 1px 0px, rgba(17, 17, 26, 0.495) 0px 0px 4px;
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 500px;
+    background: linear-gradient(rgba(121, 119, 140, 0.3),
+    rgba(201, 201, 208, 0.7));
+    border-radius: 30px;
+}
+
+.fotocard img{
+    border-radius: 10px;
+    width: 200px;
+}
+
+.testimoni-wrap h1{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.containercard{
+    transition: transform 0.3s ease;
+}
+
+.containercard h4{
+    padding-top: 10px;
+    color: gray;
+    font-size: 15px
+}
+
+.containercard:hover{
+    transform: translateY(-10px);
+}
+
+.containercard h3{
+    text-align: start;
+    margin-top: 10px;
+}
+.containercard p{
+    margin-top: 10px;
+}
+.containercard h3 i{
+    color: #fdc938;
+    font-size: 25px;
+}
+/* swiper selesai */
+/* testimoni selesai */
+
+/* paket travel */
+.travel-pack{
+    margin-top: 300px;
+}
+.course-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.course-item {
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-course {
+    width: 400px;
+    background: #002e5e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-course .icon-travel{
+    font-size: 70px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.item-course h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+.course-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+.course-item h1{
+    text-align: center;
+    font-weight: bold;
+}
+.course-item .icon-travel{
+    font-size: 70px;
+    text-align: center;
+    padding-top: 30px;
+}
+.list ul{
+    list-style: none;
+    line-height: 25px;
+}
+.list{
+    padding-left: 40px;
+    padding-top: 50px;
+}
+
+.course-item{
+    transition: transform 0.3s ease;
+}
+
+.course-item:hover{
+    transform: translateY(-10px);
+}
+.item-course{
+    transition: transform 0.3s ease;
+}
+
+.item-course:hover{
+    transform: translateY(-10px);
+}
+.course-item img{
+    width: 50px;
+    padding-left: 390px;
+}
+.item-course img{
+    width: 50px;
+    padding-left: 370px;
+}
+.icon-travel h3{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    color: #005cbb;
+}
+
+/* paket travel selesai */
+
+/* kontak */
+
+.kontak-wrap h1{
+    font-weight: bold;
+}
+
+.kontak-wrap .formulir input{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 15px 0;
+    padding: 10px 10px;
+}
+.formulir i{
+    padding-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+.formulir .pesan input{
+    width: 300px;
+    height: 80px;
+}
+.kontak p{
+    font-weight: bold;
+    padding-top: 40px;
+    padding-right: 70PX;
+}
+.kontak{
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.kontak i{
+    font-size: 29px;
+
+}
+.bungkus-kontak{
+    margin-top: 200px;
+    width: 400px;
+    margin-left: 50px;
+    margin-left: 700px;
+}
+/* kontak selesai */
+
+/* footer */
+footer{
+    padding: 66px;
+    background-color: #101c32;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 200px;
+}
+
+footer li{
+    list-style: none;
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.Kontak{
+    padding-bottom: 40px;
+}
+
+.navigasi{
+    padding-bottom: 40px;
+}
+
+.icon-medsos{
+    padding-bottom: 40px;
+    font-size: 25xp;
+}
+
+.icon-medsos i{
+    font-size: 20px;
+}
+
+/* footer selesai */
+
+/* subscribe */
+.subscribe input{
+    width: 220px;
+    padding: 15px 12px;
+    background-color: #334F6c;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.subscribe a{
+    padding: 15px 12px;
+    background-color: #fdc938;
+    color: white;
+    text-decoration: none;
+    font-size: 0.69rem;
+    transition: 0.3s ease;
+}
+
+.subscribe a:hover{
+    background-color: white;
+    color: black;
+}
+
+.NewsLetter p{
+    color:#7b838a;
+    margin-bottom: 20px;
+}
+
+.Hubungi-kami a{
+    padding: 15px 12px;
+    border-radius: 15px;
+    margin-top: 30px;
+    background-color: #fdc938;
+    color: white;
+    text-decoration: none;
+    font-size: 0.69rem;
+    transition: 0.3s ease;
+}
+
+.Hubungi-kami a:hover{
+    background-color: white;
+    color: black;
+}
+.Booking a{
+    padding: 15px 12px;
+    border-radius: 15px;
+    margin-top: 30px;
+    background-color: #fdc938;
+    color: white;
+    text-decoration: none;
+    font-size: 0.69rem;
+    transition: 0.3s ease;
+}
+
+.Booking a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* subscribe selesai */
+
+.copyright{
+    color: white;
+    text-align: center;
+}
+footer .copyright{
+    color: #fff;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 15px;
+}
+
+/* footer selesai */
